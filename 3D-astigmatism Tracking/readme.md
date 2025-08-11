@@ -1,1 +1,34 @@
+# 3D-astigmatism Tracking
+MATLAB script to fit the jump step histogram. 
+
+## 1. First_localization.mat
+This MATLAB script generates random localizations in 3D space depending on the input parameters. Parameters that are involved:
+- Minimum photons used for tracking experiments
+- Center of the log-normal photon distribution
+- Z range of the experiment
+- Astigmatism parameters (described in [Chowdhury et al., Optics Letters 2022:](https://opg.optica.org/ol/abstract.cfm?uri=ol-47-21-5727))
+
+## 2. Jump Step Histogram Fitter
+This MATLAB script generates a second localization corresponding to each localization generated in the first MATLAB script, depending on the input diffusion coefficient parameters. It then generates a jump histogram and compares it to the experimental jump histogram using RMSD. The program involves a global optimization algorithm that generates new jump histograms for different diffusion coefficient values, and the output is the value that yields the lowest RMSD. There are three versions of this file:
+
+### a. 1D_Jump_step_histogram_fitter.mat
+This file fits the experimental jump histogram to a single diffusion coefficient.
+Variables:
+- D (Diffusion coefficient)
+
+### b. 2D_Jump_step_histogram_fitter.mat
+This file fits the experimental jump histogram to two diffusion coefficients.
+Variables:
+- D1
+- D2
+- A1 (Fraction of D1)
+
+### c. 3D_Jump_step_histogram_fitter.mat
+This file fits the experimental jump histogram to three diffusion coefficients.
+Variables:
+- D1
+- D2
+- D3
+- A1 (Fraction of D1)
+- A2
 
