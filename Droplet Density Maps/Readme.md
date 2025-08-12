@@ -1,5 +1,5 @@
 # Scripts to create Droplet Density Maps
-There are two MATLAB scripts that are required to generate maps:
+Three MATLAB scripts are required to generate maps:
 1. Cube_Volume_Estimator.mat
 2. kNN_Estimator.mat
 3. DBSCAN.mat
@@ -43,5 +43,3 @@ The DBSCAN algorithm calculates the number of neighbors for each localization an
   - Minimum number of points
     - This is the value at which DBSCAN does not recognize any high-density points in the simulated data set. The value set here should yield       no clusters when run on the simulated data file.
 - Now, using the same "kNN value" and "Minimum number of points" obtained while running the simulated data file run the experimental data file. 
-
-### Data Formatting to run the MATLAB script
