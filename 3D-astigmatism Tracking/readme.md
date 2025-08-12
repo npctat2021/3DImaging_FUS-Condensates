@@ -1,5 +1,5 @@
 # 3D-astigmatism Tracking
-MATLAB script to fit the jump step histogram. 
+MATLAB script to fit the jump step histogram. Run the programs in the following order:
 
 ## 1. First_localization.mat
 This MATLAB script generates random localizations in 3D space depending on the input parameters. Parameters that are involved:
@@ -19,16 +19,16 @@ Variables:
 ### b. 2D_Jump_step_histogram_fitter.mat
 This file fits the experimental jump histogram to two diffusion coefficients.
 Variables:
-- D1
-- D2
-- A1 (Fraction of D1)
+- D1(Diffusion coefficient of species 1)
+- D2(Diffusion coefficient of species 2)
+- A1 (Fraction of species 1)
 
 ### c. 3D_Jump_step_histogram_fitter.mat
 This file fits the experimental jump histogram to three diffusion coefficients.
 Variables:
-- D1
-- D2
-- D3
-- A1 (Fraction of D1)
-- A2
+- D1(Diffusion coefficient of species 1)
+- D2(Diffusion coefficient of species 2)
+- D3(Diffusion coefficient of species 3)
+- A1(Fraction of species 1)
+- A2(Fraction of species 2)
 
