@@ -8,9 +8,9 @@ This repository contains three separate folders dedicated to different single-mo
  - **SiMRoD (Single-molecule rotational diffusion microscopy) Analysis**
 
 Each folder contains a readme.md file with instructions on  
-- How to run the scripts
-- Data format required to run them 
+- Description of each script
 - The order in which they need to be run
+- Variables to consider within each script
   
 ## System Requirements
 MATLAB 2021b and newer with toolboxes:
