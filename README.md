@@ -13,13 +13,14 @@ Each folder contains a readme.md file with instructions on
 - The order in which they need to be run
   
 ## System Requirements
-MATLAB 2021b and newer. with toolboxes:
+MATLAB 2021b and newer with toolboxes:
 - Statistics and Machine Learning
 - Global Optimization
 - Signal Processing
 - Optimization
 - Image Processing
 - Curve Fitting
+- Radar Toolbox
 
 The majority of the scripts don't require high computational power or special hardware. It should work even with a laptop PC with an OKish CPU and RAM. It was developed with the Windows system, but should also work on other OS with MATLAB and toolboxes readily installed. Typical install time on a "normal" desktop computer is 30-45 minutes. 
 
