@@ -1,5 +1,5 @@
 # Scripts to Analyze SiMRoD Data
-14 MATLAB scripts need to be run in the following order to analyze data. 
+14 MATLAB scripts need to be run in the following order to analyze data. The raw data file needed to run the programs can be found here: [Google Drive](https://drive.google.com/file/d/1IUSJwpMGk_dcX42QlKU_NMDPEnKeyILp/view?usp=drive_link)
 
 ## Step1_SpotFitting_And_Cleanup.mat
 This script is used to localize all spots in the movie and eliminate spots that are close to one another.
