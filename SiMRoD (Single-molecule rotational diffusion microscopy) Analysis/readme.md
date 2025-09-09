@@ -1,5 +1,5 @@
 # Scripts to Analyze SiMRoD Data
-14 MATLAB scripts need to be run in the following order to analyze data. The raw data file needed to run the programs can be found here: [Google Drive](https://drive.google.com/file/d/1IUSJwpMGk_dcX42QlKU_NMDPEnKeyILp/view?usp=drive_link)
+13 MATLAB scripts need to be run in the following order to analyze data. The raw data file needed to run the programs can be found here: [Google Drive](https://drive.google.com/file/d/1IUSJwpMGk_dcX42QlKU_NMDPEnKeyILp/view?usp=drive_link)
 
 ## Step1_SpotFitting_And_Cleanup.mat
 This script is used to localize all spots in the movie and eliminate spots that are close to one another.
@@ -31,8 +31,10 @@ This script is used to select the condensate that needs to be analyzed.
 - How to select an ROI?
   - Input p = 1 or 2 accordingly
   - In the window that pops up, start clicking around the condensate in the top channel (if p = 1) or the condensate in the bottom channel (if p = 2). Select points all the way around the condensate.
-  - Once done, press enter or right click
+  - Once done, press Enter or right-click
   - You should see the "ROI data saved successfully" message appear in the command window
+ (See the uploaded "ROI Selection.png" to visualize a selected condensate).
+    
 
 ## Step4_eliminate_repeated_spots.mat
 This script can be used to remove localizations that appear in successive frames. It was set to 0 for our experiments to collect all localizations. 
@@ -70,8 +72,11 @@ This script subtracts the background from the spot intensity to yield the true i
 
 ## Step9_Combined_Photon_and_Polarization_Analysis
 This script compares the intensity difference between the spots localized in both channels and computes a 'Var(p)'. 
-'p_statistics.txt' has the result in this order: g value used, average p value (should be close to 0), average p2 value [Var(p) = average p2 value - average p value)] 
+'p_statistics.txt' has the result in this order: g value used, average p value (should be close to 0), average p2 value [Var(p) = average p2 value - average p value] 
 
 ### Special Instructions: 
 - Change this variable (line 8) in the script accordingly
   - g = 0.98; (Adjust g-factor for optimal overlap between the photon distribution curves from localizations in p- and s-channel)
+ 
+## Output
+The main output file is 'p_statistics.txt'. The second value in the file = average p-value and the third value = average p2 value. From these, we can calculate Var(p) = average p2 value - average p value (Refer to the Methods section for details). 
